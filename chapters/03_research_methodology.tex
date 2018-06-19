@@ -1,0 +1,52 @@
+% !TeX root = ../main.tex
+% Add the above to each chapter to make compiling the PDF easier in some editors.
+\chapter{Research Methodology}\label{chapter:methodology}
+\textit{This chapter will detail the entire process of setting up the private cloud.}
+\section{Overview}
+\textit{This will detail in a broader view what we want to do in the thesis and reasons for them}
+\section{Requirement}
+\textit{Here the requirements, based on OpenStack documentation and some other papers relating to deploying private clouds will be discussed}
+B. Technical Requirements
+Technical Requirements addresses the design, architectural and constraints requirements.
+
+Note: came to mind....
+
+Layers Admin and user based on what can be done by users assigned to this layers
+
+
+Scalable Architecture -
+The backup infrastructure should be scalable where the implementation can start small and scale when needed. The design should be able to scale based on workload or performances needs.
+
+Optimize Usage of Existing Infrastructure -
+In IaaS, every physical equipment i.e. servers, network switches, storage are treated as a commodity. To increase profit, oversubscription of resources is used to gain more from the setup. The backup solution itself should utilize existing infrastructure to provide the service.
+
+Managing Backup Workload -
+Backup tends to be concentrated on specific duration of time; usually on nonbusiness hours. The solution should be able to cater multiple concurrent backup requests without impacting the performance to any parts of the infrastructure. For example, high network throughput, high disk read/write operation or uncontrolled server load
+
+\subsection{Functional requirements}
+\textit{Here i will explain the "MUST" requirements for deploying the cloud. I will also explain what requirements that I am able to achieve}
+\subsection{Non Functional requirements}
+\textit{This will contain the "non-MUST requirements for deploying the cloud.}
+\subsection{Additional requirements}
+\textit{This will detail the extra components required for the tests}
+\section{Deployment Use-Cases}
+\textit{Here the number and configuration of the cases that i have decided upon for the tests will be detailed} \textit{I intend to use four major case configurations for my test and then modify them for other testing different bottle necks. The reason(s) for these cases will be detailed based on the expected result, the architecture will also be discussed}
+\subsection{Case One}
+\textit{Case one will discussed here}
+\subsection{Case Two}
+\textit{Case two will discussed here}
+\subsection{Case Three}
+\textit{Case Three will discussed here}
+\subsection{Case Four}
+\textit{Case Four will discussed here}
+\section{System Design}
+\textit{Here the private cloud will be deployed with the basic components and documents. Every step will be documented and encountered issue and solution to the problem will be documented too. This will include the installed benchmarks}
+\subsection{OpenStack Deployment}
+\textit{steps for OpenStack deployment with only basic components is detailed here}
+subsection{Auto-scaling Deployment}
+\textit{steps to deploying the auto-scaling tool are discussed in this section}
+\subsection{Benchmark Deployment}
+\textit{steps to deploying benchmarks are discussed in this section}
+\section{OpenStack Private Cloud Configurations}
+\textit{This details the how OpenStack private cloud is setup, including different possible configurations for different components}
+

@@ -1,0 +1,25 @@
+\begin{appendices}
+\chapter{Some Common encounters}\label{chapter:appendix_A}
+\textit{In this section will write a details step by step manual on how to deploy an OpenStack cloud on a server using the I10 chair's server as a case study}
+
+\section*{Understanding Horizon}
+https://docs.openstack.org/horizon/latest/user/log-in.html
+
+\section*{Managing ip address change for local host deployment}
+When OpenStack is installed in a local machine ip addresses can be an issue but these steps helps in changing the ip address to make sure you can have access to all its components.
+\begin{enumerate}
+\item Run unstack.sh.
+\item In keystone database "update endpoint set url = REPLACE(url, '[old IP address]', '[new IP address]')";
+\item Update all Ips in /etc folder "grep -rl '[old IP address]' /etc | xargs sed -i 's/[old IP address]/[new IP address]/g'".
+\item Update all Ips in /opt/stack folder "grep -rl '[old IP address]'opt/stack | xargs sed -i 's/[old IP address]/[new IP address]/g'".
+\item Restart apache2 server
+\item Run rejoin-stack.sh
+\item Restart Keystone "keystone-all"
+\end{enumerate}
+
+\chapter{Holiday}
+https://www.tiscover.com/de/scout/stpb/5,en,SCH1,1784/objectId,ACC248856de,a,0,a0,2,ar0,1,c0,0,curr,EUR,df,2458299,dfs,2458299,dt,2458301,dts,2458301,e,0,fa,1,flexSearch,0,idr,1,idx,0,pl,1,prds,1,r,RGN14926de,ref,2,s,0,season,at1,sk0s0,r0%7E1_STP248864de-191908-0-262.2,toId,ACC248856de,ts,1528970575008/booking.html
+
+
+
+\end{appendices}
